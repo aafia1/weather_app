@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search city..." />
+            <div class="button-group">
+                <button id="searchBtn" title="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.99 4.99 1.49-1.49-4.98-4.99zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+                <button id="voiceBtn" title="Speak">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M12 14c.83 0 1.5-.67 1.5-1.5V6c0-.83-.67-1.5-1.5-1.5S10.5 5.17 10.5 6v6.5c0 .83.67 1.5 1.5 1.5zM18 11.5c0 2.5-2 4.5-4.5 4.5S9 14 9 11.5H7c0 3.03 2.13 5.57 5 6.32V21h2v-3.18c2.87-.75 5-3.29 5-6.32h-2z"/>
+          </svg>
+        </button>
+            </div>
+        </div>
+
+        <div class="weather-data">
+            <h2 class="location">--</h2>
+            <div class="weather-icon-container">
+                <img id="weatherIcon" alt="Weather Icon" width="100" class="weather-icon" />
+                <div class="weather-effects"></div>
+            </div>
+            <div class="temp">--°C</div>
+            <div class="desc">--</div>
+
+            <div class="details">
+                <div class="detail-row">
+                    <p id="humidity">Humidity: --%</p>
+                    <p id="feels">Feels like: --°C</p>
+                </div>
+                <div class="detail-row">
+                    <p id="wind">Wind: -- m/s</p>
+                    <p id="pressure">Pressure: -- hPa</p>
+                </div>
+
+                <div class="time-container">
+                    <div class="time-column local">
+                        <p class="time-label">Local Time</p>
+                        <p id="sunrise">🌅 Sunrise: --</p>
+                        <p id="sunset">🌇 Sunset: --</p>
+                    </div>
+                    <div class="time-column pk">
+                        <p class="time-label">Pakistan Time</p>
+                        <p id="sunrise-pk">🌅 Sunrise: --</p>
+                        <p id="sunset-pk">🌇 Sunset: --</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Hourly Forecast</h3>
+        <div id="hourly" class="forecast-cards"></div>
+
+        <h3>5-Day Forecast</h3>
+        <div id="forecast" class="forecast-cards"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
