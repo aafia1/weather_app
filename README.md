@@ -1,5 +1,4 @@
-
-# 🌦️ Voice-Powered Weather App
+# 🌦️ Voice-Powered weather_app
 
 Welcome to my **Weather Forecast Web App**!  
 This is a modern, responsive weather app that fetches real-time data using the OpenWeatherMap API. It supports **voice input**, **auto-location**, and **hourly + 5-day forecasts**.
