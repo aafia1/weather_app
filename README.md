@@ -32,7 +32,7 @@ This is a modern, responsive weather app that fetches real-time data using the O
 
 ## 🌍 Live Demo
 
-👉 [Click here to try the app live](https://aafia1.github.io/weather-app/)
+👉 [Click here to try the app live]( https://aafia1.github.io/weather_app/)
 
 ---
 
